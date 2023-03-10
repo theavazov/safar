@@ -1,0 +1,79 @@
+/* === FONTS === */
+@font-face {
+  font-family: "Interface regular";
+  src: url("../public/fonts/Interface/TTInterfaces-Regular.woff");
+}
+
+@font-face {
+  font-family: "Interface medium";
+  src: url("../public/fonts/Interface/TTInterfaces-Medium.woff");
+}
+
+@font-face {
+  font-family: "Interface semibold";
+  src: url("../public/fonts/Interface/TTInterfaces-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "Bebasneue regular";
+  src: url("../public/fonts/BebasNeue/BebasNeue\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Bebasneue bold";
+  src: url("../public/fonts/BebasNeue/BebasNeue\ Bold.otf");
+}
+
+/* === UTILS === */
+:root {
+  --interface-regular: "Interface regular";
+  --interface-medium: "Interface medium";
+  --interface-semibold: "Interface semibold";
+  --bebas-regular: "Bebasneue regular";
+  --bebas-bold: "Bebasneue bold";
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--interface-regular), sans-serif;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.section_title {
+  font-family: var(--bebas-bold), sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 83px;
+}
+
+/* === LAYOUTS === */
+.box,
+.mediumbox,
+.minibox {
+  max-width: calc(1664px + 32px);
+  margin: 0 auto;
+  padding-inline: 16px;
+  border: 1px solid red;
+}
+
+.mediumbox {
+  max-width: calc(1382px + 32px);
+}
+
+.minibox {
+  max-width: calc(960px + 32px);
+}
