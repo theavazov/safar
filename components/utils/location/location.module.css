@@ -1,7 +1,6 @@
 .location {
   display: flex;
   flex-direction: column;
-  gap: 22px;
 }
 
 .navigation {
@@ -13,7 +12,19 @@
 .node {
   font-size: 20px;
   line-height: 28px;
-  color: #353437;
+  color: #5d5d5f;
+  transition: 0.3s;
+}
+
+a.node:hover {
+  color: var(--black);
+  transition: 0.3s;
+}
+
+p.node {
+  font-family: var(--interface-medium), sans-serif;
+  font-weight: 500;
+  color: var(--black);
 }
 
 .title {
@@ -21,4 +32,5 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 83px;
+  text-transform: uppercase;
 }

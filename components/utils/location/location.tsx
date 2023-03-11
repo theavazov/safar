@@ -13,6 +13,7 @@ type Props = {
 export function Location({ location, title, parent }: Props) {
   return (
     <div className={styles.location}>
+      <h2 className={styles.title}>{title}</h2>
       <nav className={styles.navigation}>
         <Link href="/" className={styles.node}>
           Главная
@@ -28,7 +29,6 @@ export function Location({ location, title, parent }: Props) {
         ) : null}
         <p className={styles.node}>{location}</p>
       </nav>
-      <h2 className={styles.title}>{title}</h2>
     </div>
   );
 }
